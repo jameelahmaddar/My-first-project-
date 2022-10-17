@@ -1,0 +1,12 @@
+import React from 'react';
+import{StyleSheet,Text,TouchableOpacity,View} from  'react-native';
+
+const Button=()=>{
+    return(
+        <View>
+        <Text Style={{Fontsize:60}}>click</Text>
+        <Button title="login" onpress={()}=>{alert("hi,class")}
+        </View>
+    )
+}
+exports default Button;
