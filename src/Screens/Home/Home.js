@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Button, TextInput, TouchableOpacity, Image } from 'react-native';
-import imagePath from '../../constants/imagePath';
+import imagePath from "../../constants/imagePath"
 import styles from './Styles';
 // create a component
 class Home extends Component {
@@ -21,12 +21,14 @@ class Home extends Component {
                     <Text style={styles.headerStyle}>BACK</Text>
                     <Text style={styles.headerStyle}>HOME</Text>
                     <Text style={styles.headerStyle}>OK</Text>
-                </View>
+
+                    </View>
                 <View style={{ borderBottomcolor: 'black', borderBottomWidth: 10 }}>
                 </View>
                 <View style={styles.ImageView}>
-                    <Image style={styles.ImageStyle} source={imagePath.logo} />
+                <Image style={styles.ImageStyle} source={imagePath.logo} /> 
                 </View>
+                
                 <View style={styles.TextViewStyle}>
                     <TextInput style={styles.TextInputStyle}
                         placeholder='Enter Email'
@@ -49,6 +51,7 @@ class Home extends Component {
                     </View>
                 </View>
             </View>
+            
 
         )
     }
